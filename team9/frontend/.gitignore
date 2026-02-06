@@ -44,6 +44,7 @@ wheels/
 .installed.cfg
 *.egg
 
+team9/env/
 # Database (Optional but recommended)
 db.sqlite3
 
