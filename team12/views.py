@@ -10,3 +10,6 @@ def ping(request):
 
 def base(request):
     return render(request, f"{TEAM_NAME}/index.html")
+
+def listening_practice(request):
+    return render(request, f"{TEAM_NAME}/listening_practice.html")
