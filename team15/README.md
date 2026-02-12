@@ -73,8 +73,13 @@ python manage.py runserver
 # Create network (if not exists)
 docker network create app404_net || true
 
-# From team15/ directory
-docker compose up --build
+# Start core once from project root (if not already running)
+cd ..
+docker compose up --build -d
+
+# Then start only Team15 gateway
+cd team15
+docker compose up -d
 ```
 
 ## Base URL
